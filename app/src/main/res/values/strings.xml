@@ -7,4 +7,6 @@
     <string name="radio_squirrel">다람쥐</string>
     <string name="radio_mouse">쥐</string>
     <string name="btn_done">선택 완료</string>
+    <string name="btn_finish">종료</string>
+    <string name="btn_first">처음으로</string>
 </resources>

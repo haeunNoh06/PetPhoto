@@ -16,7 +16,7 @@
         android:layout_marginBottom="@dimen/margin_small"
         />
 
-    <CheckBox
+    <Switch
         android:id="@+id/check_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,53 +25,64 @@
         />
 
     <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="#F4F4B5"
         >
-
-
+        <Button
+            android:id="@+id/btn_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_first"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_favorite_pet"
-            android:textSize="@dimen/text_size_large"
+            android:textSize="@dimen/text_size_medium"
         />
 
         <RadioGroup
+            android:id="@+id/rg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:id="@+id/radio_cat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_cat"
                 android:textSize="@dimen/text_size_medium"
             />
             <RadioButton
+                android:id="@+id/radio_squirrel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_squirrel"
                 android:textSize="@dimen/text_size_medium"
             />
             <RadioButton
+                android:id="@+id/radio_mouse"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_mouse"
                 android:textSize="@dimen/text_size_medium"
             />
         </RadioGroup>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin_medium"
-            android:text="@string/btn_done"
-            />
         <ImageView
-            android:layout_width="match_parent"
+            android:id="@+id/imgv"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/cat"
+            />
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_finish"
             />
     </LinearLayout>
 
